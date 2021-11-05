@@ -1,0 +1,64 @@
+.complimentButton {
+    background-color: rebeccapurple;
+}
+
+body {
+    background-color: rgb;
+}
+
+.title a {
+        display: block;
+        width: 100vw;
+        height: 300px;
+        color: black;
+        position: relative;
+}
+
+.title a:after {
+        background: url(https://i.pinimg.com/564x/99/80/da/9980da7437fd074eba7abc93d5c6d76c.jpg) repeat;
+        content: "";
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* TRANSISITION */
+        transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+}
+
+.title a:hover:after{   
+        opacity: 1;
+}
+
+header {
+    height: 120px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: rgb(5, 5, 5);
+  }
+
+button {
+    background-color: #000000;
+    width: 85px;
+    height: 35px;
+    color: rgb(73, 233, 59);
+    border: color;
+    margin: 50px;
+  }
+
+form {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(104, 112, 185);
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 30px;
+  }

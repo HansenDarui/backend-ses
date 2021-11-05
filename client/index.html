@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container">
+
+    <label for="color">Fav Color?:</label>
+    <input type="text" name="color" size="20" id="color" value=""/>
+    <button type="button">Submit</button>
+    
+    <header>
+      The end boss of pop up websites ;)
+    </header>
+
+    <div class="title">
+      <a href="#">We welcome you...</a>
+    </div>
+    
+    <button id="freeButton">Free Coupons</button>
+    
+    <button id="complimentButton">Get a compliment</button>
+    
+    <button id="fortuneButton">I see the future</button>
+    
+    <form>
+      <input 
+      type='text'
+      id="address"
+      placeholder="Do you like people?"/>
+      <input 
+      type='text'
+      id="price"
+      placeholder="aware I'm watching you?"/>
+      <input 
+      type='text'
+      id="img"
+      placeholder="insert your bank info"/>
+      <button id="mineButton">Submit for review</button>
+    </form>
+    
+    <button onclick="visitPage();">Visit Page Now</button>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script>
+
+      var input = document.getElementById('color');
+      var button = document.querySelector('button');
+      button.addEventListener('click', function( event ) {
+        event.preventDefault();    
+        var color = input.value;
+        document.body.style.background = color;
+      });
+
+      document.getElementById("mineButton").onclick = function () {
+        axios.get("http://localhost:4000/api/take")
+          .then(function (response) {
+            const data = response.data;
+            alert(data);
+          });
+      };
+
+      document.getElementById("freeButton").onmouseenter = function () {
+        axios.get("http://localhost:4000/api/couponss")
+          .then(function (response) {
+            const data = response.data;
+            alert(data);
+          });
+      };
+
+      document.getElementById("complimentButton").onclick = function () {
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+
+      document.getElementById("fortuneButton").onclick = function () {
+        axios.get("http://localhost:4000/api/fortune")
+          .then(function (response) {
+            const data = response.data;
+            alert(data);
+          });
+      };
+      function visitPage(){
+        window.location='https://devmountain.com/application-process';
+    }
+      
+
+    </script>
+  </body>
+</html>
