@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back End Assessment</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -24,24 +27,88 @@
     
     <button id="fortuneButton">I see the future</button>
     
-    <form>
-      <input 
-      type='text'
-      id="address"
-      placeholder="Do you like people?"/>
-      <input 
-      type='text'
-      id="price"
-      placeholder="aware I'm watching you?"/>
-      <input 
-      type='text'
-      id="img"
-      placeholder="insert your bank info"/>
-      <button id="mineButton">Submit for review</button>
-    </form>
-    
-    <button onclick="visitPage();">Visit Page Now</button>
+    <main>
+      <form>
+        <input 
+        type='text'
+        id="address"
+        placeholder="Do you like people?"/>
+        <input 
+        type='text'
+        id="price"
+        placeholder="aware I'm watching you?"/>
+        <input 
+        type='text'
+        id="img"
+        placeholder="insert your bank info"/>
+        <button id="mineButton">Submit for review</button>
+      </form>
+      
+      <button onclick="visitPage();">Visit Page Now</button>
 
+      <div>
+        <form>
+          <input 
+            type='text'
+            id="title"
+            placeholder="What's the book's title?"/>
+          <input 
+            type='text'
+            id="img"
+            placeholder='Paste an image URL'/>
+              <section id="ratings-container">
+                  <p>Rate the book:</p>
+                  <div id="radio-container">
+                      <label for="one">
+                          <input
+                              type="radio"
+                              name="ratings"
+                              value="1"
+                              id="one"/>
+                          1
+                      </label>
+                      <label for="two">
+                          <input
+                              type="radio"
+                              name="ratings"
+                              value="2"
+                              id="two"/>
+                          2
+                      </label>
+                      <label for="three">
+                          <input
+                              type="radio"
+                              name="ratings"
+                              value="3"
+                              id="three"/>
+                          3
+                      </label>
+                      <label for="four">
+                          <input
+                              type="radio"
+                              name="ratings"
+                              value="4"
+                              id="four"/>
+                          4
+                      </label>
+                      <label for="five">
+                          <input
+                              type="radio"
+                              name="ratings"
+                              value="5"
+                              id="five"/>
+                          5
+                      </label>
+                  </div>
+              </section>
+              <button>add book</button>
+        </form>
+      </div>
+    
+      <section id="books-container"></section>
+    </main>
+    
+    <script src="main.js"></script>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     
@@ -89,8 +156,11 @@
       function visitPage(){
         window.location='https://devmountain.com/application-process';
     }
-      
 
+    
+    
     </script>
+
+
   </body>
 </html>

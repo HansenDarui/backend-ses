@@ -49,7 +49,7 @@ button {
     color: rgb(73, 233, 59);
     border: color;
     margin: 50px;
-  }
+}
 
 form {
     width: 350px;
@@ -61,4 +61,85 @@ form {
     justify-content: space-evenly; 
     align-items: center;
     margin: 30px;
-  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+main {
+    display: flex; 
+    justify-content: center;
+}
+
+
+input[type='text'] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: blanchedalmond;
+}
+
+#ratings-container {
+    width: 85%;
+}
+
+#radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-cover {
+    width: 200px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.book-card {
+    background-color: blanchedalmond;
+    width: 200px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.book-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.book-rating {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.btns-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.btns-container > button {
+    width: 20px;
+}

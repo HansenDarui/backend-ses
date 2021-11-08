@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "The Lion King",
+      "rating": 5,
+      "imageURL" : "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Aladdin",
+      "rating": 4,
+      "imageURL" : "https://imgix.ranker.com/user_node_img/21/417657/original/aladdin-photo-u64?w=650&q=50&fm=pjpg&fit=fill&bg=fff"
+    },
+    {
+      "id": 3,
+      "title": "Aristocats",
+      "rating": 5,
+      "imageURL" : "https://horizon-emea.disneyinternational.com/cvms/movie/thumbnail/3900/3900-it_it.jpg"
+    }
+]
+    

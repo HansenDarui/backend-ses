@@ -4,9 +4,9 @@ const cors = require("cors");
 const app = express();
 
 
+app.use(express.json()); // When we want to be able to accept JSON.
 app.use(cors());
 
-app.use(express.json()); // When we want to be able to accept JSON.
 
 app.get("/api/compliment", (req, res) => {
   const compliments = ["Gee, you're a smart cookie!",
@@ -53,4 +53,15 @@ app.get("/api/take", (req, res) => {
 });
 
 
+
+const {getBooks, deleteBook, createBook, updateBook} = require('./controller.js');
+
+app.get('/api/books', getBooks);
+app.delete('/api/books/:id', deleteBook);
+app.post('/api/books', createBook);
+app.put('/api/books/:id', updateBook);
+
+
 app.listen(4000, () => console.log("Server running on 4000"));
+
+//need to add .delete and .post... i also need it to be hitting the back end
